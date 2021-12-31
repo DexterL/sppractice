@@ -10,4 +10,4 @@ RUN \
 FROM run AS release
 COPY --from=dev  /workdir/target/sppractice-1.0-SNAPSHOT.jar  /workdir/app.jar
 
-EXPOSE 80
+EXPOSE 8080
