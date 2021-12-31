@@ -8,6 +8,6 @@ RUN \
   mvn clean install package -Dmaven.test.skip=true
 
 FROM run AS release
-COPY --from=dev  /workdir/target/PracticeApplication.jar  /workdir/app.jar
+COPY --from=dev  /workdir/target/sppractice-1.0-SNAPSHOT.jar  /workdir/app.jar
 
 EXPOSE 80
